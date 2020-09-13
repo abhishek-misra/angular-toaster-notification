@@ -1,0 +1,62 @@
+<app-toastr-notification></app-toastr-notification>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Notification Component</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="javascript:void(0);">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a class="btn btn-outline-success my-2 my-sm-0" href="https://github.com/abhishek-misra">More Projects</a>
+    </form>
+  </div>
+</nav>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Welcome !</h1>
+      <p>
+        This project is demonstrating how to create custom notification component in Angular.
+      </p>
+      <p>
+        <a class="btn btn-primary btn-lg"
+          href="https://www.c-sharpcorner.com/article/toastr-like-notification-component-in-angular-7/"
+          role="button">Learn more &raquo;</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Success</h2>
+        <p> Click below to show the Success message.</p>
+        <p> <button class="btn btn-success" (click)="showSuccessNotification()">Success Message</button> </p>
+      </div>
+      <div class="col-md-4">
+        <h2>Error</h2>
+        <p> Click below to show Error message.</p>
+        <p> <button class="btn btn-danger" (click)="showErrorNotification()">Error Message</button> </p>
+      </div>
+      <div class="col-md-4">
+        <h2>Info</h2>
+        <p> Click below to show Info message.</p>
+        <p> <button class="btn btn-info" (click)="showInfoNotification()">Info Message</button>  </p>
+      </div>
+    </div>
+  </div>
+
+</main>
+<hr />
+<footer class="container">
+  <p>&copy; Company 2017-2018</p>
+</footer>
